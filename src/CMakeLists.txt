@@ -1,3 +1,6 @@
+# cmake_minimum_required(VERSION 4.0)
+# project(iowow)
+
 include(CheckSymbolExists)
 
 if (NOT CMAKE_BUILD_TYPE)
@@ -24,6 +27,7 @@ include(CheckIncludeFile)
 include(CheckIncludeFiles)
 include(CheckLibraryExists)
 include(TestBigEndian)
+set(TestQsortR "/home/dev/dev/sm/iowow/cmake/Modules/TestQSortR")
 include(TestQsortR)
 
 if (OWNER_PROJECT_NAME)
